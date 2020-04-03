@@ -1,0 +1,14 @@
+.nav {
+
+  &__list {
+    margin: 10px 0;
+  }
+
+  &__item {
+    @include li-item;
+  }
+
+  &__link {
+    @include link;
+  }
+}

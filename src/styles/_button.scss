@@ -1,0 +1,23 @@
+.button {
+  font-size: 16px;
+  display: flex;
+
+  &__link {
+    @include button;
+    padding: 17px 32px;
+    text-decoration: none;
+    display: inline-block;
+
+    &-reasons {
+      padding: 17px 102px;
+      margin: 0 auto;
+    }
+
+    &-info {
+      padding: 17px 66px;
+    }
+  }
+  &-info {
+    display: inline-block;
+  }
+}

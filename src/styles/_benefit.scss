@@ -1,0 +1,18 @@
+.benefit {
+  position: relative;
+
+  &__title {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+    width: 720px;
+    margin: 0 auto 130px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 450px);
+    justify-content: space-around;
+    grid-template-rows: repeat(2, 810px);
+  }
+}

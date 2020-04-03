@@ -1,0 +1,31 @@
+@mixin container {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+@mixin li-item {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 30px;
+}
+
+@mixin link {
+  color: $main-color;
+  text-decoration: none;
+}
+
+@mixin button {
+  color: $button-color;
+  font-weight: 700;
+  background-color: $button-background-color;
+  border-radius: 28px;
+  box-shadow: 0 2px 4px 0 rgba(57,74,84,0.8);
+}
+
+@mixin business {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 28px;
+  margin: 0 auto;
+}

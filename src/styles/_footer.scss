@@ -1,0 +1,51 @@
+footer {
+  color: $footer-color;
+  background-color: $main-color;
+}
+
+.footer {
+  @include container;
+  padding: 64px 0;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 64px;
+  }
+
+  &__nav-title {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0 0 16px;
+  }
+
+  &__nav-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__nav-list-social &__nav-item {
+    display: inline-block;
+  }
+
+  &__nav-link {
+    color: $footer-color;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 35px;
+    text-decoration: none;
+  }
+
+  &__nav-img {
+    margin-right: 16px;
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__copyright {
+    text-align: right;
+  }
+}

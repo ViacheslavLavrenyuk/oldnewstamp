@@ -1,0 +1,22 @@
+@import "utils";
+@import "container";
+@import "header";
+@import "nav";
+@import "auth";
+@import "button";
+@import "choice";
+@import "reasons";
+@import "card";
+@import "background";
+@import "benefit";
+@import "benefit-card";
+@import "business";
+@import "footer";
+
+body {
+  font-family: "Nunito", sans-serif;
+  background: #fff;
+  color: $main-color;
+  margin: 0;
+  overflow-x: hidden;
+}
