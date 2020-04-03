@@ -15,6 +15,11 @@
 
   &__logo {
     opacity: 0.5;
+    transition: $transition-duration;
+  }
+
+  &__logo:hover {
+    transform: scale(1.1);
   }
 
   &__content {

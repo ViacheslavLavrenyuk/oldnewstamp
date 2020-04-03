@@ -11,4 +11,8 @@
   &__link {
     @include link;
   }
+
+  &__link:hover {
+    color: $button-hover-background-color;
+  }
 }

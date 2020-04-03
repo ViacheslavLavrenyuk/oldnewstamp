@@ -24,7 +24,7 @@ footer {
     padding: 0;
   }
 
-  &__nav-list-social &__nav-item {
+  &__nav-list-img &__nav-item {
     display: inline-block;
   }
 
@@ -34,6 +34,11 @@ footer {
     font-weight: 300;
     line-height: 35px;
     text-decoration: none;
+    transition: $transition-duration;
+  }
+
+  &__nav-link:hover {
+    opacity: 0.8;
   }
 
   &__nav-img {

@@ -15,6 +15,11 @@
     &-active {
       @include button;
       padding: 8px 30px;
+      transition: $transition-duration;
+    }
+
+    &-active:hover {
+      @include button-hover;
     }
   }
 }

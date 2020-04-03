@@ -37,5 +37,10 @@
     color: $button-background-color;
     font-weight: 800;
     text-decoration: none;
+    transition: $transition-duration;
+  }
+
+  &__info-link:hover {
+    color: $button-hover-background-color;
   }
 }

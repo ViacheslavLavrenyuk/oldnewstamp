@@ -4,6 +4,11 @@
   &__img {
     border-radius: 15px;
     box-shadow: 5px 10px 30px -8px rgba(57,55,82,0.15);
+    transition: 0.3s;
+  }
+
+  &__img:hover {
+    transform: scale(1.1);
   }
 
   &__title {

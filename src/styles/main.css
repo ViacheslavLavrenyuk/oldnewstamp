@@ -14,6 +14,7 @@
   display: flex;
   align-items: center;
   color: #3b3954;
+  transition: 0.2s;
 }
 .header__content {
   display: flex;
@@ -48,6 +49,9 @@
   color: #3b3954;
   text-decoration: none;
 }
+.nav__link:hover {
+  color: #59ad8a;
+}
 
 .auth__list {
   margin: 10px 0;
@@ -70,6 +74,10 @@
   border-radius: 28px;
   box-shadow: 0 2px 4px 0 rgba(57, 74, 84, 0.8);
   padding: 8px 30px;
+  transition: 0.2s;
+}
+.auth__link-active:hover {
+  background-color: #59ad8a;
 }
 
 .button {
@@ -85,6 +93,7 @@
   padding: 17px 32px;
   text-decoration: none;
   display: inline-block;
+  transition: 0.2s;
 }
 .button__link-reasons {
   padding: 17px 102px;
@@ -92,6 +101,9 @@
 }
 .button__link-info {
   padding: 17px 66px;
+}
+.button__link:hover {
+  background-color: #59ad8a;
 }
 .button-info {
   display: inline-block;
@@ -110,6 +122,10 @@
 }
 .choice__logo {
   opacity: 0.5;
+  transition: 0.2s;
+}
+.choice__logo:hover {
+  transform: scale(1.1);
 }
 .choice__content {
   display: grid;
@@ -202,6 +218,10 @@
 .benefit-card__img {
   border-radius: 15px;
   box-shadow: 5px 10px 30px -8px rgba(57, 55, 82, 0.15);
+  transition: 0.3s;
+}
+.benefit-card__img:hover {
+  transform: scale(1.1);
 }
 .benefit-card__title {
   font-size: 30px;
@@ -258,6 +278,10 @@
   color: #709c8a;
   font-weight: 800;
   text-decoration: none;
+  transition: 0.2s;
+}
+.business__info-link:hover {
+  color: #59ad8a;
 }
 
 footer {
@@ -284,7 +308,7 @@ footer {
   list-style: none;
   padding: 0;
 }
-.footer__nav-list-social .footer__nav-item {
+.footer__nav-list-img .footer__nav-item {
   display: inline-block;
 }
 .footer__nav-link {
@@ -293,6 +317,10 @@ footer {
   font-weight: 300;
   line-height: 35px;
   text-decoration: none;
+  transition: 0.2s;
+}
+.footer__nav-link:hover {
+  opacity: 0.8;
 }
 .footer__nav-img {
   margin-right: 16px;
@@ -303,6 +331,10 @@ footer {
 }
 .footer__copyright {
   text-align: right;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
