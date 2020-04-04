@@ -12,6 +12,10 @@
     &-reasons {
       padding: 17px 102px;
       margin: 0 auto;
+
+      @media screen and (max-width: $mobile-break-point) {
+        padding: 17px 50px;
+      }
     }
 
     &-info {
@@ -25,5 +29,11 @@
 
   &-info {
     display: inline-block;
+  }
+
+  &-center {
+    @media screen and (max-width: $medium-break-point) {
+      display: inline-block;
+    }
   }
 }

@@ -2,10 +2,24 @@
 
   &__list {
     margin: 10px 0;
+
+    @media screen and (max-width: $nav-break-point) {
+      padding-left: 0;
+    }
   }
 
   &__item {
     @include li-item;
+
+    @media screen and (max-width: $mobile-break-point) {
+      margin: 0 16px;
+    }
+  }
+
+  &__item:last-child {
+    @media screen and (max-width: $mobile-break-point) {
+      margin-right: 0;
+    }
   }
 
   &__link {

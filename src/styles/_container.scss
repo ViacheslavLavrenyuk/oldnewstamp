@@ -1,4 +1,8 @@
 .container {
   @include container;
   padding: 10px;
+
+  @media screen and (max-width: $big-screen-break-point) {
+    padding: 20px 40px;
+  }
 }

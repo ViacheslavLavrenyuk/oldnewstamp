@@ -2,6 +2,11 @@
 
   &__list {
     margin: 10px 0;
+
+    @media screen and (max-width: $nav-break-point) {
+      margin: 25px 0;
+      padding: 0;
+    }
   }
 
   &__item {

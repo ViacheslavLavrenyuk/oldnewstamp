@@ -1,10 +1,19 @@
 .benefit-card {
   padding: 5px;
 
+  @media screen and (max-width: $footer-break-point) {
+    margin-bottom: 40px;
+    display: block;
+  }
+
   &__img {
     border-radius: 15px;
     box-shadow: 5px 10px 30px -8px rgba(57,55,82,0.15);
     transition: 0.3s;
+
+    @media screen and (max-width: $mobile-break-point) {
+      width: 100%;
+    }
   }
 
   &__img:hover {

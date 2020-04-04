@@ -2,11 +2,23 @@
   margin: 70px auto 160px;
   max-width: 768px;
 
+  @media screen and (max-width: $nav-break-point) {
+    margin: 0 auto 90px;
+  }
+
+  @media screen and (max-width: $mobile-break-point) {
+    margin-bottom: 60px;
+  }
+
   &__title {
     font-size: 30px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 90px;
+
+    @media screen and (max-width: $mobile-break-point) {
+      margin: 0 0 40px;
+    }
   }
 
   &__description {
@@ -19,6 +31,10 @@
     list-style: none;
     padding-left: 15px;
     margin-bottom: 75px;
+
+    @media screen and (max-width: $mobile-break-point) {
+      margin-bottom: 60px;
+    }
   }
 
   &__list-item:before {
@@ -31,6 +47,10 @@
     @include business;
     display: inline-block;
     margin-left: 30px;
+
+    @media screen and (max-width: $mobile-break-point) {
+      margin: 30px 0 0;
+    }
   }
 
   &__info-link {
@@ -38,6 +58,10 @@
     font-weight: 800;
     text-decoration: none;
     transition: $transition-duration;
+
+    @media screen and (max-width: $small-break-point) {
+      display: block;
+    }
   }
 
   &__info-link:hover {

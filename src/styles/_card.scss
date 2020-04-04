@@ -1,12 +1,31 @@
 .card {
   width: 330px;
-  padding: 0 10px;
+  padding: 0 20px;
+
+  @media screen and (max-width: $cards-break-point) {
+    width: auto;
+    padding: 20px;
+  }
+
+  &__img {
+    @media screen and (max-width: $mobile-break-point) {
+      width: 100%;
+    }
+  }
 
   &__title {
     margin: 64px 0 32px;
-    max-width: 215px;
+    width: 215px;
     font-size: 20px;
     font-weight: 700;
+
+    @media screen and (max-width: $cards-break-point) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: $nav-break-point) {
+      margin: 42px 0 22px;
+    }
   }
 
   &__description {

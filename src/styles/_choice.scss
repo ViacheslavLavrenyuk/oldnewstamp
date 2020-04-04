@@ -5,17 +5,41 @@
     font-weight: bold;
     text-align: center;
     margin: 200px 0 75px;
+
+    @media screen and (max-width: $big-screen-break-point) {
+      margin: 90px 0 75px;
+    }
+
+    @media screen and (max-width: $medium-break-point) {
+      margin: 25px 0 50px;
+    }
   }
 
   &__logos {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     justify-items: center;
+
+    @media screen and (max-width: $medium-break-point) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (max-width: $small-break-point) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: $mobile-break-point) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__logo {
     opacity: 0.5;
     transition: $transition-duration;
+
+    @media screen and (max-width: $medium-break-point) {
+      margin-bottom: 20px;
+    }
   }
 
   &__logo:hover {
@@ -26,6 +50,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 75px 0;
+
+    @media screen and (max-width: $medium-break-point) {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    @media screen and (max-width: $medium-break-point) {
+      margin: 75px 0 40px;
+    }
   }
 
   &__media {
@@ -36,16 +69,33 @@
     position: absolute;
     left: -160px;
     z-index: -1;
+
+    @media screen and (max-width: $small-break-point) {
+      left: 0;
+      width: 100%;
+    }
   }
 
   &__img {
     box-shadow: 25px 45px 100px -20px rgba(57,55,82,0.1);
     margin-top: 54px;
     border-radius: 10px;
+
+    @media screen and (max-width: $medium-break-point) {
+      margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: $medium-break-point) {
+      width: 90%;
+    }
   }
 
   &__description {
     margin: auto 0 auto 30px;
+
+    @media screen and (max-width: $medium-break-point) {
+      margin: 0 auto;
+    }
   }
 
   &__text {

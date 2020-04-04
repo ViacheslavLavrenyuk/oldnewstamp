@@ -7,10 +7,48 @@ footer {
   @include container;
   padding: 64px 0;
 
+  @media screen and (max-width: $big-screen-break-point) {
+    padding: 64px 40px;
+  }
+
+  @media screen and (max-width: $mobile-break-point) {
+    padding: 64px 40px 20px;
+  }
+
   &__content {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     margin-bottom: 64px;
+
+    @media screen and (max-width: $footer-break-point) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    @media screen and (max-width: $small-break-point) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (max-width: $mobile-break-point) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__nav-space {
+    @media screen and (max-width: $footer-break-point) {
+      display: none;
+    }
+  }
+
+  &__nav-small {
+    @media screen and (max-width: $small-break-point) {
+      display: none;
+    }
+  }
+
+  &__nav-mobile {
+    @media screen and (max-width: $mobile-break-point) {
+      display: none;
+    }
   }
 
   &__nav-title {
@@ -26,6 +64,10 @@ footer {
 
   &__nav-list-img &__nav-item {
     display: inline-block;
+
+    @media screen and (max-width: $medium-break-point) {
+      display: block;
+    }
   }
 
   &__nav-link {
@@ -48,9 +90,17 @@ footer {
   &__info {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    @media screen and (max-width: $mobile-break-point) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__copyright {
     text-align: right;
+
+    @media screen and (max-width: $mobile-break-point) {
+      text-align: left;
+    }
   }
 }
